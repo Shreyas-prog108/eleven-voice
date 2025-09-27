@@ -34,7 +34,7 @@ if st.button("Generate Voice"):
                 "text": text_input,
                 "voice_settings": {
                     "stability": 0.7,
-                    "similarity_boost": 0.85
+                    "similarity_boost": 0.45
                 }
             }
             response = requests.post(API_URL, headers=headers, json=data)
